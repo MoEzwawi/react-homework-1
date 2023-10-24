@@ -21,7 +21,7 @@ class AllTheBooks extends Component {
             <div>
                 <Container className='mt-3 me-5 d-flex justify-content-end'>
                     <Dropdown>
-                        <Dropdown.Toggle variant="info-subtle" id="dropdown-basic">
+                        <Dropdown.Toggle id="dropdown-basic">
                             Select Genre
                         </Dropdown.Toggle>
 
