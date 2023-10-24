@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const MyNav = function () {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="md" className="container-fluid z-3 bg-secondary position-sticky top-0 border-bottom border-3 border-black">
             <Container>
                 <Navbar.Brand href="#">EpiBooks</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
