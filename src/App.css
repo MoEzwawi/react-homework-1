@@ -37,3 +37,11 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-brownish {
+  background-color: rgb(72, 3, 72);
+}
+
+.silly {
+  color: wheat;
+}

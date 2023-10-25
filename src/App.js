@@ -3,17 +3,17 @@ import MyFooter from './components/MyFooter';
 import MyNav from './components/MyNav';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Welcome from './components/Welcome';
-import AllTheBooks from './components/AllTheBooks';
+// import AllTheBooks from './components/AllTheBooks';
 import BookList from './components/BookList';
-import scifiBooks from './data/scifi.json'
+
 
 
 function App() {
   return (
-    <div>
+    <div className='bg-brownish'>
       <MyNav />
       <Welcome />
-      <BookList arrayOfBooks={scifiBooks} />
+      <BookList />
       <MyFooter />
     </div>
   );

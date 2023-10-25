@@ -11,12 +11,12 @@ class AllTheBooks extends Component {
     state = {
         currentGenre: scifiBooks
     }
+    setGenre = (genre) => {
+        this.setState({
+            currentGenre: genre
+        })
+    }
     render() {
-        const setGenre = (genre) => {
-            this.setState({
-                currentGenre: genre
-            })
-        }
         return (
             <div>
                 <Container className='mt-3 me-5 d-flex justify-content-end'>
@@ -26,11 +26,11 @@ class AllTheBooks extends Component {
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item onClick={() => { setGenre(scifiBooks) }}>Scifi</Dropdown.Item>
-                            <Dropdown.Item onClick={() => { setGenre(fantasyBooks) }}>Fantasy</Dropdown.Item>
-                            <Dropdown.Item onClick={() => { setGenre(historyBooks) }}>History</Dropdown.Item>
-                            <Dropdown.Item onClick={() => { setGenre(horrorBooks) }}>Horror</Dropdown.Item>
-                            <Dropdown.Item onClick={() => { setGenre(romanceBooks) }}>Romance</Dropdown.Item>
+                            <Dropdown.Item onClick={() => { this.setGenre(scifiBooks) }}>Scifi</Dropdown.Item>
+                            <Dropdown.Item onClick={() => { this.setGenre(fantasyBooks) }}>Fantasy</Dropdown.Item>
+                            <Dropdown.Item onClick={() => { this.setGenre(historyBooks) }}>History</Dropdown.Item>
+                            <Dropdown.Item onClick={() => { this.setGenre(horrorBooks) }}>Horror</Dropdown.Item>
+                            <Dropdown.Item onClick={() => { this.setGenre(romanceBooks) }}>Romance</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </Container>
